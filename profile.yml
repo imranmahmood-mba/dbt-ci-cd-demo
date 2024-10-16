@@ -1,4 +1,4 @@
-default:
+DBT_CI_CD_DEMO:
      outputs:
        dev:
         type: snowflake
