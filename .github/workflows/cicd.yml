@@ -21,7 +21,7 @@ jobs:
         run: dbt deps
 
       - name: dbt run
-        run: dbt run --full-refresh --profiles-dir ./
+        run: dbt run
         env:
           SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
           SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
