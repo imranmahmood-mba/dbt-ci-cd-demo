@@ -12,5 +12,6 @@ DBT_CI_CD_DEMO:
     schema: RAW
     client_session_keep_alive: False
     query_tag: github_action_query
+  target: dev
 
 

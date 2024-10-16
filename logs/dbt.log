@@ -4194,3 +4194,49 @@ Runtime Error
 [0m00:56:46.406664 [debug] [MainThread]: Command `dbt debug` failed at 00:56:46.406460 after 0.16 seconds
 [0m00:56:46.407054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97092adf30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97188f0490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97189b2ec0>]}
 [0m00:56:46.407361 [debug] [MainThread]: Flushing usage events
+[0m01:00:44.097863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef61405ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef62ab14e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef62ab0df0>]}
+
+
+============================== 01:00:44.102322 | 04976a0e-284b-49fd-9518-718f2745dab4 ==============================
+[0m01:00:44.102322 [info ] [MainThread]: Running with dbt=1.8.4
+[0m01:00:44.102814 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/saha/Documents/Projects/dbt_ci_cd_demo/logs', 'profiles_dir': '.', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:00:44.111934 [info ] [MainThread]: dbt version: 1.8.4
+[0m01:00:44.112189 [info ] [MainThread]: python version: 3.10.14
+[0m01:00:44.112383 [info ] [MainThread]: python path: /Users/saha/opt/miniconda3/envs/dbt/bin/python
+[0m01:00:44.112571 [info ] [MainThread]: os info: macOS-10.16-x86_64-i386-64bit
+[0m01:00:44.114941 [info ] [MainThread]: target not specified in profile 'DBT_CI_CD_DEMO', using 'default'
+[0m01:00:44.115250 [info ] [MainThread]: Using profiles dir at .
+[0m01:00:44.115443 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m01:00:44.115626 [info ] [MainThread]: Using dbt_project.yml file at /Users/saha/Documents/Projects/dbt_ci_cd_demo/dbt_project.yml
+[0m01:00:44.170750 [info ] [MainThread]: Configuration:
+[0m01:00:44.171046 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m01:00:44.171259 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:00:44.171457 [info ] [MainThread]: Required dependencies:
+[0m01:00:44.171697 [debug] [MainThread]: Executing "git --help"
+[0m01:00:44.203686 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:00:44.204521 [debug] [MainThread]: STDERR: "b''"
+[0m01:00:44.204791 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:00:44.205042 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m01:00:44.205268 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:00:44.205487 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  The profile 'DBT_CI_CD_DEMO' does not have a target named 'default'. The valid target names for this profile are:
+   - dev
+   - type
+   - threads
+   - account
+   - user
+   - password
+   - role
+   - database
+   - warehouse
+   - schema
+   - client_session_keep_alive
+   - query_tag
+
+
+[0m01:00:44.208167 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.1692225, "process_user_time": 0.802079, "process_kernel_time": 0.159154, "process_mem_max_rss": "94576640", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m01:00:44.208913 [debug] [MainThread]: Command `dbt debug` failed at 01:00:44.208698 after 0.17 seconds
+[0m01:00:44.209323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef61405ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef6146f310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef619f7070>]}
+[0m01:00:44.209656 [debug] [MainThread]: Flushing usage events
