@@ -3,12 +3,12 @@ default:
        dev:
         type: snowflake
         threads: 1
-        account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}"
-        user: "{{ env_var('DBT_SNOWFLAKE_USERNAME') }}"
-        role: "{{ env_var('DBT_SNOWFLAKE_ROLE') }}"
-        password: "{{ env_var('DBT_SNOWFLAKE_PW') }}"
-        database: "{{ env_var('DBT_SNOWFLAKE_DATABASE') }}"
-        warehouse: "{{ env_var('DBT_SNOWFLAKE_WAREHOUSE') }}"
-        schema: "{{ env_var('DBT_SNOWFLAKE_SCHEMA') }}"
+        account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+        user: "{{ env_var('SNOWFLAKE_USER')}}"
+        password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+        role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+        database: AIRBNB
+        warehouse: COMPUTE_WH
+        schema: RAW
         client_session_keep_alive: False
         query_tag: github_action_query
