@@ -1,8 +1,10 @@
 WITH raw_listings AS (
     SELECT *
-    FROM AIRBNB.RAW.RAW_LISTINGS
+    FROM airbnb.raw.raw_listings
 )
-SELECT id AS listing_id,
+
+SELECT
+    id AS listing_id,
     name AS listing_name,
     listing_url,
     room_type,
