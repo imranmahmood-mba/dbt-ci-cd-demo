@@ -1,5 +1,4 @@
 name: dbt CI
-
 on:
   push:
     branches:
@@ -12,7 +11,6 @@ env:
   SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
   SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
   SNOWFLAKE_SCHEMA: ${{ secrets.SNOWFLAKE_SCHEMA }}
-
 
 jobs:
   dbt_ci:
