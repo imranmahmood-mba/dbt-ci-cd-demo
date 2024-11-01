@@ -32,5 +32,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   DBT_CI_CD_DEMO:
     +materialized: view
-    dim:
+    curated:
       +materialized: table
+    +persist_docs:
+      relation: true
+      columns: true
