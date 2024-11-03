@@ -8,5 +8,5 @@ SELECT
     o_orderdate,
     o_totalprice,
     o_orderstatus
-FROM 
+FROM
 orderdata
