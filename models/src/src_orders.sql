@@ -9,4 +9,4 @@ SELECT
     o_totalprice,
     o_orderstatus
 FROM
-orderdata
+    orderdata
