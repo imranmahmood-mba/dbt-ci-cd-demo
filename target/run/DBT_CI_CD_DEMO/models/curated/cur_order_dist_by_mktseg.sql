@@ -2,9 +2,11 @@
   
     
 
-        create or replace transient table DBT_CI_DEMO.SRC.cur_order_dist_by_mktseg
-         as
-        (WITH joindata AS (
+create or replace transient table TECHNOVATION.DEV.cur_order_dist_by_mktseg
+    
+    
+    
+    as (WITH joindata AS (
     SELECT
         cust.c_custkey,
         cust.c_mktsegment,
@@ -12,8 +14,8 @@
         ordr.o_orderkey,
         ordr.o_orderstatus,
         ordr.o_totalprice
-    FROM DBT_CI_DEMO.SRC.src_customers AS cust
-    INNER JOIN DBT_CI_DEMO.SRC.src_orders AS ordr
+    FROM TECHNOVATION.DEV.src_customers AS cust
+    INNER JOIN TECHNOVATION.DEV.src_orders AS ordr
         ON cust.c_custkey = ordr.o_custkey
 ),
 
@@ -26,6 +28,8 @@ aggr AS (
 )
 
 SELECT * FROM aggr
-        );
-      
+    )
+;
+
+
   

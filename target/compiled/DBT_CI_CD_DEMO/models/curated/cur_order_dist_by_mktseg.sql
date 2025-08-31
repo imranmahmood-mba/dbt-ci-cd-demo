@@ -6,8 +6,8 @@ WITH joindata AS (
         ordr.o_orderkey,
         ordr.o_orderstatus,
         ordr.o_totalprice
-    FROM DBT_CI_DEMO.SRC.src_customers AS cust
-    INNER JOIN DBT_CI_DEMO.SRC.src_orders AS ordr
+    FROM TECHNOVATION.DEV.src_customers AS cust
+    INNER JOIN TECHNOVATION.DEV.src_orders AS ordr
         ON cust.c_custkey = ordr.o_custkey
 ),
 

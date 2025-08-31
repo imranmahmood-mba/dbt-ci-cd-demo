@@ -1,5 +1,5 @@
 
-  create or replace   view DBT_CI_DEMO.SRC.src_customers
+  create or replace   view TECHNOVATION.DEV.src_customers
   
     
     
@@ -11,7 +11,10 @@
   
 )
 
-   as (
+  
+  
+  
+  as (
     WITH custdata AS (
     SELECT *
     FROM snowflake_sample_data.tpch_sf1.customer
