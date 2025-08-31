@@ -1,4 +1,4 @@
-### Welcome to your new dbt demo project!
+### Welcome to your new dbt project!
 
 
 We are going to create a CI pipeline with the following stages:
